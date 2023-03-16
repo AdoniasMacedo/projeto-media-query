@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@media print{
+    body{
+        background: black url(../imagens/back-print.jpg) center center no-repeat;
+        background-size: cover;
+       }
+
+       main{
+        box-shadow: 2px 2px 2px 2px black;
+       }
+
+       main > h1{
+        color: darkgray;
+       }
+    
+        #celular{display: none;}
+        #tablet{display: none;}
+        #pc{display: none;}
+        #tv{display: none;}
+        #papel{display: block;}
+} 
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+   body{
+    background: black url(../imagens/back-tablet.jpg) center center no-repeat;
+    background-size: cover;
+   }
+
+    #celular{display: none;}
+    #tablet{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+    #papel{display: none;}
+}
+
+/*PC*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background: black url(../imagens/back-pc.jpg) center center no-repeat;
+        background-size: cover;
+       }
+    
+        #celular{display: none;}
+        #tablet{display: none;}
+        #pc{display: block;}
+        #tv{display: none;}
+        #papel{display: none;}
+}
+
+/*Telas maiores*/
+@media screen and (min-width: 1200px){
+    body{
+        background: black url(../imagens/back-tv.jpg) center center no-repeat;
+        background-size: cover;
+       }
+    
+        #celular{display: none;}
+        #tablet{display: none;}
+        #pc{display: none;}
+        #tv{display: block;}
+        #papel{display: none;}
+}
